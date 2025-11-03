@@ -5,7 +5,7 @@ module.exports = {
   output: {
     filename: "bundle.js",
     path: path.resolve(__dirname, "public"),
-    publicPath: "./", 
+    publicPath: "/public/", // importante para rutas correctas en Vercel
   },
   mode: "production",
 };
