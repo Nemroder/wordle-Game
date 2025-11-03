@@ -1,21 +1,21 @@
 {
-  "name": "curso-rxjs",
+  "name": "wordle-game",
   "version": "1.0.0",
-  "main": "index.js",
+  "description": "A fun Wordle-style game built with Vanilla JavaScript and RxJS.",
+  "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack serve"
+    "build": "webpack",
+    "start": "webpack serve --mode development --open",
+    "deploy": "npm run build"
   },
-  "keywords": [],
   "author": "",
-  "license": "ISC",
-  "description": "",
+  "license": "MIT",
   "dependencies": {
-    "rxjs": "^7.8.1",
-    "webpack": "^5.93.0",
-    "webpack-dev-server": "^5.0.4"
+    "rxjs": "^7.8.1"
   },
   "devDependencies": {
-    "webpack-cli": "^5.1.4"
+    "webpack": "^5.93.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.0.4"
   }
 }
